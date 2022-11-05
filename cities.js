@@ -1,0 +1,200 @@
+module.exports = [ 
+{
+"city": "Mālegaon", 
+"lat": "20.5500", 
+"lng": "74.5500", 
+"country": "India", 
+"iso2": "IN", 
+"admin_name": "Mahārāshtra", 
+"capital": "", 
+"population": "690844", 
+"population_proper": "435362"
+}, 
+{
+"city": "Kochi", 
+"lat": "9.9667", 
+"lng": "76.2833", 
+"country": "India", 
+"iso2": "IN", 
+"admin_name": "Kerala", 
+"capital": "", 
+"population": "677381", 
+"population_proper": "677381"
+}, 
+{
+"city": "Gorakhpur", 
+"lat": "26.7611", 
+"lng": "83.3667", 
+"country": "India", 
+"iso2": "IN", 
+"admin_name": "Uttar Pradesh", 
+"capital": "", 
+"population": "673446", 
+"population_proper": "673446"
+}, 
+{
+"city": "Shimoga", 
+"lat": "13.9304", 
+"lng": "75.5600", 
+"country": "India", 
+"iso2": "IN", 
+"admin_name": "Karnātaka", 
+"capital": "", 
+"population": "654055", 
+"population_proper": "319550"
+}, 
+{
+"city": "Tiruppūr", 
+"lat": "11.1075", 
+"lng": "77.3398", 
+"country": "India", 
+"iso2": "IN", 
+"admin_name": "Tamil Nādu", 
+"capital": "", 
+"population": "650000", 
+"population_proper": "444543"
+}, 
+{
+"city": "Guntūr", 
+"lat": "16.3000", 
+"lng": "80.4500", 
+"country": "India", 
+"iso2": "IN", 
+"admin_name": "Andhra Pradesh", 
+"capital": "", 
+"population": "647508", 
+"population_proper": "647508"
+}, 
+{
+"city": "Raurkela", 
+"lat": "22.2492", 
+"lng": "84.8828", 
+"country": "India", 
+"iso2": "IN", 
+"admin_name": "Odisha", 
+"capital": "", 
+"population": "625831", 
+"population_proper": "483629"
+}, 
+{
+"city": "Mangalore", 
+"lat": "12.8703", 
+"lng": "74.8806", 
+"country": "India", 
+"iso2": "IN", 
+"admin_name": "Karnātaka", 
+"capital": "", 
+"population": "623841", 
+"population_proper": "623841"
+}, 
+{
+"city": "Nānded", 
+"lat": "19.1500", 
+"lng": "77.3333", 
+"country": "India", 
+"iso2": "IN", 
+"admin_name": "Mahārāshtra", 
+"capital": "", 
+"population": "623708", 
+"population_proper": "550564"
+}, 
+{
+"city": "Cuttack", 
+"lat": "20.4500", 
+"lng": "85.8667", 
+"country": "India", 
+"iso2": "IN", 
+"admin_name": "Odisha", 
+"capital": "", 
+"population": "606007", 
+"population_proper": "606007"
+}, 
+{
+"city": "Chānda", 
+"lat": "19.9500", 
+"lng": "79.3000", 
+"country": "India", 
+"iso2": "IN", 
+"admin_name": "Mahārāshtra", 
+"capital": "", 
+"population": "595118", 
+"population_proper": "328351"
+}, 
+{
+"city": "Dehra Dūn", 
+"lat": "30.3180", 
+"lng": "78.0290", 
+"country": "India", 
+"iso2": "IN", 
+"admin_name": "Uttarakhand", 
+"capital": "admin", 
+"population": "578420", 
+"population_proper": "578420"
+}, 
+{
+"city": "Durgāpur", 
+"lat": "23.5500", 
+"lng": "87.3200", 
+"country": "India", 
+"iso2": "IN", 
+"admin_name": "West Bengal", 
+"capital": "", 
+"population": "566517", 
+"population_proper": "566517"
+}, 
+{
+"city": "Āsansol", 
+"lat": "23.6833", 
+"lng": "86.9667", 
+"country": "India", 
+"iso2": "IN", 
+"admin_name": "West Bengal", 
+"capital": "", 
+"population": "563917", 
+"population_proper": "563917"
+}, 
+{
+"city": "Bhāvnagar", 
+"lat": "21.7650", 
+"lng": "72.1369", 
+"country": "India", 
+"iso2": "IN", 
+"admin_name": "Gujarāt", 
+"capital": "", 
+"population": "554978", 
+"population_proper": "464602"
+}, 
+{
+"city": "Amrāvati", 
+"lat": "20.9333", 
+"lng": "77.7500", 
+"country": "India", 
+"iso2": "IN", 
+"admin_name": "Mahārāshtra", 
+"capital": "", 
+"population": "549370", 
+"population_proper": "549370"
+}, 
+{
+"city": "Nellore", 
+"lat": "14.4333", 
+"lng": "79.9667", 
+"country": "India", 
+"iso2": "IN", 
+"admin_name": "Andhra Pradesh", 
+"capital": "", 
+"population": "547621", 
+"population_proper": "547621"
+}, 
+{
+"city": "Ajmer", 
+"lat": "26.4680", 
+"lng": "74.6390", 
+"country": "India", 
+"iso2": "IN", 
+"admin_name": "Rājasthān", 
+"capital": "", 
+"population": "542321", 
+"population_proper": "542321"
+}
+]

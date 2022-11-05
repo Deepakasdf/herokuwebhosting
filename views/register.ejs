@@ -1,0 +1,34 @@
+
+    <%= layout ('/boilerplate') %>
+    
+<div class="row mb-3">
+  <div class="col-md-6 offset-md-3">
+    <div class="card-body"></div>
+      <h1 class="text-center mt-3">Register</h1>
+      <form  action="/register" method ="POST" novalidate class="validate-form">
+              <div class="mb-3">
+                <label for="username" class="form-label" >username</label>
+                <input type="text" class="form-control" id="username" name="username" placeholder="username" required >
+                <div class="valid-feedback">
+                  looks good
+                </div>
+              </div>
+              <div class="mb-3">
+                <label for="email" class="form-label" >email</label>
+                <input type="text" class="form-control" id="email" name="email"  placeholder="email" required>
+                <div class="valid-feedback">
+                  looks good
+                </div>
+              </div>
+              <label for="password" class="form-label" >password</label>
+                <input type="text" class="form-control" id="password" name="password"  placeholder="password" required >
+                <div class="valid-feedback">
+                  looks good
+                </div>
+              <div class="mb-3 form-check">
+                <button class="btn btn-primary mt-3" >sign up</button>
+              </div>
+  </form>
+</div>
+</body>
+</html>

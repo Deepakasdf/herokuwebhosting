@@ -1,0 +1,39 @@
+<%= layout ('/boilerplate') %>
+<div class="row mb-3">
+  <div class="col-md-6 offset-md-3">
+      <h1 class="text-center mt-3">new campground</h1>
+      <form  action="/campground" method ="POST" novalidate class="validate-form" >
+              <div class="mb-3">
+                <label for="city" class="form-label" >city</label>
+                <input type="text" class="form-control" id="city"name="campground[city]" required >
+                <div class="valid-feedback">
+                  looks good
+</div>
+                <div class="mb-3">
+                  <label for="place" class="form-label" >place</label>
+                  <input type="text" class="form-control" id="place" name="campground[place]" required>
+                  <div class="valid-feedback">
+                    looks good
+                  </div>
+
+               
+                  
+                </div>
+           
+                
+                
+              </div>
+            
+
+              
+              <div class="mb-3 form-check">
+                <button class=" d-flex flex-column btn btn-outline-success mt-3 justify-content-center  ">add campground</button>
+              </div>
+
+  </form>
+  </div>
+</div>
+
+</body>
+
+</html>
