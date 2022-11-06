@@ -43,7 +43,7 @@ app.set('views', path.join(__dirname , 'views'));
 app.use(express.urlencoded({extended:true}))
 app.engine('ejs' , ejsmate)
 app.use(methodOverride('_method'))
-
+pw.env.set("variable", "value");
 
 const sessionopen = {
   secret:'thisismysecret'
