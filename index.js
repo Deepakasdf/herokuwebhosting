@@ -23,13 +23,13 @@ const registerRoutes = require('./register');
 //dotenv.config();
 const mongoSanitize = require('express-mongo-sanitize');
 const Campground = require('./campground')
-//const dburl = process.env.DB_URL
+const dburl = process.env.DB_URL || 'mongodb://localhost:27017/yelpcamp';
 
 
 main().catch(err => console.log(err));
 
 async function main() {
-  await mongoose.connect('mongodb://localhost:27017/yelpcamp');
+  await mongoose.connect(dburl);
   console.log("CONNECTED")
   
 }
