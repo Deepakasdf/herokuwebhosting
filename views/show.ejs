@@ -13,10 +13,6 @@
       <h5 class="card-title"> <%= campground.city %></h5>
       <h5 class="card-title"> <%= campground.place %></h5>
      
-      <form action="/campground/<%=campground._id%>?_method=DELETE" method="POST">
-        <button class="btn btn-danger">DELETE</button>
-  </form>
-     
     <h5 class="mt-2">leave your review here</h5>
   <form action ="/campground/<%= campground._id %>/reviews" method="POST" novalidate class="validate-form">
    
@@ -53,9 +49,9 @@
   <p class="starability-result" data-rating="<%= review.rating %>">
     Rated:<%= review.rating %> stars
   </p>
-  <form action="/campground/<%= campground._id %>/reviews/<%= review._id %>?_method=DELETE" method="POST">
+   <form action="/campground/<%= campground._id %>/reviews/<%= review._id %>?_method=DELETE" method="POST">
     <button class="btn btn-danger">Delete</button>
-      </form>
+      </form> 
     <% } %>
   
   </div>
