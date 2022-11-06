@@ -108,8 +108,8 @@ app.use((err ,req ,res ,next)=>{
    res.status(statuscode).render('error.ejs' , {err})
  })
  
- //const port = process.env.port || 2332;
+ const port = process.env.PORT || 2332;
 
-app.listen(2332, ()=>{
-    console.log('dont worry we listening');
+app.listen(port, ()=>{
+    console.log(`serving on port ${port}` );
 })
