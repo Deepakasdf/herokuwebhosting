@@ -34,7 +34,7 @@ async function main() {
   
 }
 
-//'mongodb://localhost:27017/yelp-camp'
+
 
 
 
