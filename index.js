@@ -103,12 +103,12 @@ app.all('*', (err,req,res,next)=>{
 })
 
 app.use((err ,req ,res ,next)=>{
-  const {statuscode = 404} =err;
+  const {} =err;
    if(!err.message) err.message='something went wrong'
    res.status(statuscode).render('error.ejs' , {err})
  })
  
- const port = process.env.PORT || 2332;
+ const port = process.env.PORT || 4323;
 
 app.listen(port, ()=>{
     console.log(`serving on port ${port}` );
