@@ -110,6 +110,6 @@ app.use((err ,req ,res ,next)=>{
  
  const port = process.env.PORT || 4323;
 
-app.listen(port, ()=>{
+app.listen(port, (reg,res)=>{
     console.log(`serving on port ${port}` );
 })
