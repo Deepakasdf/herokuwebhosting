@@ -105,7 +105,7 @@ app.all('*', (err,req,res,next)=>{
 })
 
 app.use((err ,req ,res ,next)=>{
-  const {} =err;
+  const {statuscode = 404 } = err;
    if(!err.message) err.message='something went wrong'
    res.status(statuscode).render('error.ejs' , {err})
  })
