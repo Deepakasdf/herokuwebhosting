@@ -4,6 +4,7 @@ if(process.env.NODE_ENV !== "production"){
 
 //console.log(process.env.MAPBOX_TOKEN)
 
+const {config} = require('dotenv');
 const express = require('express');
 const app = express();
 const path = require('path');
@@ -108,7 +109,7 @@ app.use((err ,req ,res ,next)=>{
    res.status(statuscode).render('error.ejs' , {err})
  })
  
- const port = process.env.PORT || 4323;
+ const port = process.env.PORT || 5528;
 
 app.listen(port, (reg,res)=>{
     console.log(`serving on port ${port}` );
