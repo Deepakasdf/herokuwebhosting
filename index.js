@@ -8,6 +8,7 @@ const {config} = require('dotenv');
 const express = require('express');
 const app = express();
 const path = require('path');
+const timeout = require('connect-timeout')
 //onst bodyParser = require('body-parser')
 const mongoose = require('mongoose');
 const ejsmate = require('ejs-mate');
@@ -41,11 +42,11 @@ async function main() {
 
 app.set('view engine' , 'ejs');
 app.set('views', path.join(__dirname , 'views'));
-app.use(express.urlencoded({extended:true}))
-app.engine('ejs' , ejsmate)
-app.use(methodOverride('_method'))
-
-
+app.use(express.urlencoded({extended:true}));
+app.engine('ejs' , ejsmate);
+app.use(methodOverride('_method'));
+app.use(timeout('5s'));
+app.use(haltOnTimedout);
 const sessionopen = {
   secret:'thisismysecret'
    , resave:false ,
@@ -109,6 +110,12 @@ app.use((err ,req ,res ,next)=>{
    res.status(statuscode).render('error.ejs' , {err})
  })
  
+
+ function haltOnTimedout (req, res, next) {
+  if (!req.timedout) next()
+}
+
+
  const port = process.env.PORT || 5528;
 
 app.listen(port, (reg,res)=>{
