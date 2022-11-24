@@ -32,7 +32,7 @@ const campgrounds = require('./campgrounds')
   router.get('/new',islogedin , catchAsync(campgrounds.form))
 
 
-  router.get('/:id', islogedin , campgrounds.show);
+  router.get('/:id', campgrounds.show);
 
 router.post('/' , validateCampground , campgrounds.createpost)
 
