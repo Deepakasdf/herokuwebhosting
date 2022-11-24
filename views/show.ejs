@@ -3,17 +3,23 @@
 <link href="/stylesheet/star.css" rel="stylesheet" type="text/css">
 
 <body>
-
+<div class="container">
   <div class="row mt-1">
-    <div class="col-12  col-sm-3 mt-1 mb-3">
+    <div class="col-12 col-sm-6 col-md-3 mt-1 mb-3">
   <h1> your choice </h1>
-  <div class="card" style="width: 18rem;">
+  <div class="card border border-success" style="width: 18rem;">
     <img src="<%= campground.image %>" class="card-img-top" >
     <div class="card-body">
       <h5 class="card-title"> <%= campground.city %></h5>
       <h5 class="card-title"> <%= campground.place %></h5>
-     
-    <h5 class="mt-2">leave your review here</h5>
+     </div>
+     </div>
+     </div>
+</div>
+
+     <div class="row">
+      <div class="col-12 col-sm-6 col-md-3">
+      <h5 class="mt-2">leave your review here</h5>
   <form action ="/campground/<%= campground._id %>/reviews" method="POST" novalidate class="validate-form">
    
       <fieldset class="starability-basic">
@@ -55,24 +61,28 @@
     <% } %>
   
   </div>
+</div>
+</div>
+
+
+
+ 
+ <div class="row">
+<div class="col-12  col-sm-3  col-md-6 ">
+  <div id='map' style='width: 400px; height: 300px;'>
   </div>
-
-
-
-
-
-
-
-    </div>
   </div>
+</div>
+
+
+
+
+
+
+
+
 
 </div>
- 
-<div class="col-3  col-sm-3 ">
-  <div id='map' style='width: 400px; height: 300px;'></div>
-  </div>
-
-
 
 </body>
 
