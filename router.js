@@ -19,7 +19,7 @@ const campgrounds = require('./campgrounds')
     if(error){
       console.log(error);
       const msg = error.details.map(el=>el.message).join(',');
-      throw new ExpressError(msg , 404)
+      throw new ExpressError(msg , 404);
     }else{
       next();
     }
